@@ -11,8 +11,7 @@
       const commentMatch = text.match(/"totalCommentCount"\s*:\s*(\d+)/);
 
       if (postMatch && commentMatch) {
-        // Find the one that matches the current profile ID if possible, but extracting from all scripts is risky in SPA.
-        // We will prioritize DOM later.
+        
         return {
           totalPosts: parseInt(postMatch[1], 10),
           totalComments: parseInt(commentMatch[1], 10),
