@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Naver Lounge Profile Stats",
+  "description": "Shows total posts and comments on Naver Lounge profile pages.",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lounge.naver.com/*",
+        "https://game.naver.com/lounge/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
